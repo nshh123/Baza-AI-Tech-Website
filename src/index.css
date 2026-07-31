@@ -1,0 +1,208 @@
+/* Baza AI Tech - Corporate Company Design System */
+:root {
+  --bg-main: #ffffff;
+  --bg-soft: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-slate: #0f172a;
+  --bg-navy-hover: #1e293b;
+  
+  --primary-blue: #0284c7;
+  --primary-blue-dark: #0369a1;
+  --primary-blue-light: #e0f2fe;
+  
+  --accent-teal: #0d9488;
+  --accent-indigo: #4f46e5;
+  --accent-emerald: #10b981;
+  
+  --text-main: #0f172a;
+  --text-body: #334155;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  
+  --border-subtle: #e2e8f0;
+  --border-strong: #cbd5e1;
+  
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-code: 'JetBrains Mono', monospace;
+  
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 12px 36px rgba(15, 23, 42, 0.12);
+  --shadow-xl: 0 20px 48px rgba(15, 23, 42, 0.16);
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+  
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Fluid Widescreen Container */
+.container {
+  max-width: 1520px;
+  width: 94%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-main);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--text-body);
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--primary-blue-light);
+  color: var(--primary-blue-dark);
+  border: 1px solid rgba(2, 132, 199, 0.25);
+}
+
+.badge-emerald {
+  background: #d1fae5;
+  color: #047857;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.badge-indigo {
+  background: #e0e7ff;
+  color: #4338ca;
+  border-color: rgba(79, 70, 229, 0.3);
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--primary-blue);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+  transition: all var(--transition-normal);
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: var(--primary-blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #ffffff;
+  color: var(--text-main);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 14px 26px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-strong);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-soft);
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+  transform: translateY(-2px);
+}
+
+/* Corporate Cards */
+.corp-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.corp-card:hover {
+  border-color: rgba(2, 132, 199, 0.4);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  max-width: 840px;
+  margin: 0 auto 56px auto;
+}
+
+.section-header h2 {
+  font-size: 2.6rem;
+  margin-top: 14px;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.section-header p {
+  color: var(--text-muted);
+  font-size: 1.18rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}

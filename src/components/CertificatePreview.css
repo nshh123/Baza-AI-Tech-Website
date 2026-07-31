@@ -1,0 +1,383 @@
+.certificate-section {
+  padding: 80px 0;
+  background: #ffffff;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.certificate-interactive-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.name-customizer {
+  padding: 20px 28px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.customizer-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+.input-group {
+  flex: 1;
+  max-width: 380px;
+}
+
+.name-input {
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  background: #ffffff;
+  border: 1.5px solid var(--primary-blue);
+  color: var(--text-main);
+  font-size: 1.05rem;
+  font-weight: 700;
+  outline: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.certificate-frame {
+  position: relative;
+  padding: 44px 52px;
+  background: #ffffff;
+  border: 3px solid var(--primary-blue);
+  box-shadow: var(--shadow-xl);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.cert-border-corner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--primary-blue-dark);
+}
+
+.cert-border-corner.top-left { top: 12px; left: 12px; border-right: none; border-bottom: none; }
+.cert-border-corner.top-right { top: 12px; right: 12px; border-left: none; border-bottom: none; }
+.cert-border-corner.bottom-left { bottom: 12px; left: 12px; border-right: none; border-top: none; }
+.cert-border-corner.bottom-right { bottom: 12px; right: 12px; border-left: none; border-top: none; }
+
+.cert-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cert-logo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cert-brand {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: 0.12em;
+  color: var(--text-main);
+}
+
+.cert-subbrand {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--primary-blue-dark);
+}
+
+.cert-badge-gold {
+  color: var(--primary-blue-dark);
+  background: var(--primary-blue-light);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.cert-title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.cert-prefix {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  color: var(--primary-blue-dark);
+}
+
+.cert-student-name {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--text-main);
+  border-bottom: 2px solid var(--border-strong);
+  padding-bottom: 8px;
+  min-width: 280px;
+}
+
+.cert-citation {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 540px;
+}
+
+.cert-course-name {
+  font-size: 1.2rem;
+  color: var(--primary-blue-dark);
+  letter-spacing: 0.04em;
+}
+
+.cert-skills-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.82rem;
+  color: var(--text-body);
+  font-weight: 600;
+  background: var(--bg-soft);
+  padding: 10px 20px;
+  border-radius: 99px;
+  border: 1px solid var(--border-subtle);
+}
+
+.cert-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.cert-signatory {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.signature-line {
+  width: 140px;
+  height: 2px;
+  background: var(--primary-blue-dark);
+  margin-bottom: 4px;
+}
+
+.signatory-name {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.signatory-title {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.cert-qr-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.qr-box {
+  background: var(--primary-blue-light);
+  padding: 8px;
+  border-radius: 8px;
+  color: var(--primary-blue-dark);
+}
+
+.qr-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.cert-status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--accent-emerald);
+  font-weight: 700;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+.cert-status-mobile {
+  display: none;
+}
+
+.cert-status-desktop {
+  display: inline;
+}
+
+/* MOBILE SPECIFIC STYLING (Preserving exact formal certificate structure & fitting status text) */
+@media (max-width: 768px) {
+  .certificate-section {
+    padding: 48px 0;
+  }
+
+  .name-customizer {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .customizer-label {
+    white-space: normal;
+  }
+
+  .input-group {
+    max-width: 100%;
+  }
+
+  .certificate-frame {
+    padding: 20px 14px;
+    border-width: 2px;
+    border-radius: 12px;
+  }
+
+  .cert-border-corner {
+    width: 14px;
+    height: 14px;
+  }
+  .cert-border-corner.top-left { top: 6px; left: 6px; }
+  .cert-border-corner.top-right { top: 6px; right: 6px; }
+  .cert-border-corner.bottom-left { bottom: 6px; left: 6px; }
+  .cert-border-corner.bottom-right { bottom: 6px; right: 6px; }
+
+  .cert-inner {
+    gap: 14px;
+  }
+
+  .cert-brand {
+    font-size: 1.05rem;
+  }
+
+  .cert-subbrand {
+    font-size: 0.55rem;
+  }
+
+  .cert-badge-gold {
+    padding: 6px;
+  }
+
+  .cert-prefix {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+  }
+
+  .cert-student-name {
+    font-size: 1.4rem;
+    min-width: 0;
+    width: 100%;
+    padding-bottom: 4px;
+  }
+
+  .cert-citation {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .cert-course-name {
+    font-size: 0.88rem;
+  }
+
+  .cert-skills-chips {
+    font-size: 0.68rem;
+    padding: 6px 10px;
+    gap: 3px 5px;
+  }
+
+  /* Formal horizontal certificate footer layout on mobile */
+  .cert-footer {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+    padding-top: 12px;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .cert-signatory {
+    flex-shrink: 0;
+  }
+
+  .signature-line {
+    width: 80px;
+  }
+
+  .signatory-name {
+    font-size: 0.78rem;
+  }
+
+  .signatory-title {
+    font-size: 0.58rem;
+  }
+
+  .cert-qr-block {
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .qr-box {
+    padding: 3px;
+    border-radius: 6px;
+  }
+
+  .qr-info {
+    font-size: 0.58rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Responsive Text Toggle */
+  .cert-status-desktop {
+    display: none !important;
+  }
+
+  .cert-status-mobile {
+    display: inline !important;
+  }
+
+  .cert-status {
+    font-size: 0.62rem !important;
+    white-space: nowrap !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 3px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .cert-status svg {
+    flex-shrink: 0 !important;
+    width: 11px !important;
+    height: 11px !important;
+  }
+}

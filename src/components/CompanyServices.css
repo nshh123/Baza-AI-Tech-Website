@@ -1,0 +1,109 @@
+.company-services-section {
+  padding: 90px 0;
+  background: var(--bg-soft);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.service-card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.featured-service {
+  border-color: var(--primary-blue);
+  box-shadow: var(--shadow-lg);
+  background: #ffffff;
+}
+
+.service-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--primary-blue-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  color: var(--text-main);
+}
+
+.service-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.service-img-wrapper {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin: 12px 0;
+  box-shadow: var(--shadow-md);
+}
+
+.service-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.service-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.96rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.service-btn {
+  margin-top: 12px;
+  width: 100%;
+}
+
+/* AmaliTech Mobile Clean Structure */
+@media (max-width: 992px) {
+  .company-services-section {
+    padding: 48px 0;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .service-card {
+    padding: 24px 20px;
+    gap: 18px;
+  }
+  .service-title {
+    font-size: 1.3rem;
+  }
+  .service-desc {
+    font-size: 0.92rem;
+  }
+  .service-img {
+    height: 180px;
+  }
+  .service-btn {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}

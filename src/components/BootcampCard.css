@@ -1,0 +1,122 @@
+.bootcamp-program-section {
+  padding: 90px 0;
+  background: var(--bg-soft);
+}
+
+.corp-bootcamp-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 52px;
+  background: #ffffff;
+  border: 2px solid var(--primary-blue);
+  box-shadow: var(--shadow-xl);
+}
+
+.bootcamp-card-header {
+  text-align: center;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 36px;
+}
+
+.corp-brand-tag {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--primary-blue-dark);
+}
+
+.corp-bootcamp-title {
+  font-size: 2.4rem;
+  color: var(--text-main);
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.corp-bootcamp-subtitle {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+}
+
+.bootcamp-card-body {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.learn-heading {
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--primary-blue-dark);
+  margin-bottom: 20px;
+}
+
+.learn-bullet-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.learn-bullet-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.fill-blue {
+  fill: rgba(2, 132, 199, 0.15);
+}
+
+.details-col {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.detail-stat-box {
+  background: var(--bg-soft);
+  border: 1px solid var(--border-subtle);
+  padding: 18px 24px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.detail-value {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.45rem;
+}
+
+.btn-bootcamp-cta {
+  width: 100%;
+  padding: 18px;
+  margin-top: 8px;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 992px) {
+  .corp-bootcamp-card {
+    padding: 28px;
+  }
+  .corp-bootcamp-title {
+    font-size: 1.8rem;
+  }
+  .bootcamp-card-body {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

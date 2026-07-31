@@ -1,0 +1,248 @@
+.corporate-hero {
+  padding: 112px 0 70px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  position: relative;
+}
+
+.hero-container-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-text-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-title {
+  font-size: 3.6rem;
+  line-height: 1.15;
+  color: var(--text-main);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.text-highlight {
+  color: var(--primary-blue);
+  position: relative;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 780px;
+}
+
+.hero-ctas {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+  width: 100%;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--primary-blue-dark);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Image Column */
+.hero-image-col {
+  position: relative;
+}
+
+.image-frame-wrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  border: 4px solid #ffffff;
+}
+
+.hero-classroom-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-trust-pill {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-lg);
+}
+
+.pill-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--primary-blue-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.text-blue {
+  color: var(--primary-blue-dark);
+}
+
+.pill-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.pill-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.98rem;
+  color: var(--text-main);
+}
+
+.pill-sub {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* Desktop Widescreen Media Query */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+/* MOBILE & TABLET STYLING (AmaliTech Mobile Structure - Image First) */
+@media (max-width: 992px) {
+  .corporate-hero {
+    padding: 84px 0 44px 0;
+  }
+
+  .hero-container-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  /* Picture comes FIRST at the top on Mobile */
+  .hero-image-col {
+    order: -1;
+    width: 100%;
+  }
+
+  .hero-classroom-img {
+    height: 240px;
+    border-radius: 14px;
+  }
+
+  .hero-trust-pill {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin-top: 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+  }
+
+  .hero-text-col {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .hero-ctas {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .hero-ctas button,
+  .hero-ctas a {
+    width: 100%;
+    padding: 14px;
+    font-size: 0.95rem;
+    justify-content: center;
+  }
+
+  /* Hide dividers on mobile so they don't consume grid cells */
+  .stat-divider {
+    display: none !important;
+  }
+
+  /* True 2x2 Grid Layout for 4 stat boxes on mobile */
+  .hero-stats-row {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-subtle);
+    width: 100%;
+  }
+
+  .stat-box {
+    background: #ffffff;
+    border: 1px solid var(--border-subtle);
+    padding: 14px 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+}
