@@ -301,7 +301,7 @@ p {
         rgba(15, 23, 42, 0.76),
         rgba(15, 23, 42, 0.88)
       ),
-      url('/baza_ai_mentor.png');
+      url('/student_header_instructors.jpg');
   }
 
   /* 7. Official Certificate of Completion Header */
@@ -311,7 +311,7 @@ p {
         rgba(15, 23, 42, 0.76),
         rgba(15, 23, 42, 0.88)
       ),
-      url('/baza_ai_classroom.png');
+      url('/student_header_certificate.jpg');
   }
 
   /* 8. Frequently Asked Questions Header */
@@ -321,7 +321,7 @@ p {
         rgba(15, 23, 42, 0.76),
         rgba(15, 23, 42, 0.88)
       ),
-      url('/baza_ai_enterprise.png');
+      url('/student_header_faq.jpg');
   }
 }
 
