@@ -26,7 +26,7 @@ export default function Navbar({ onOpenEnroll, currency, setCurrency, seatsLeft 
             <Building2 className="logo-icon" />
           </div>
           <div className="logo-text">
-            <span className="logo-title">BAZA AI TECH</span>
+            <span className="logo-title">BAZADEVSPACE</span>
             <span className="logo-subtitle">AI ACADEMY & ENTERPRISE</span>
           </div>
         </a>

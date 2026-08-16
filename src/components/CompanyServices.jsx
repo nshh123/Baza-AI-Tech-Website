@@ -7,10 +7,10 @@ export default function CompanyServices({ onOpenEnroll }) {
     <section className="company-services-section" id="services">
       <div className="container">
         <div className="section-header" id="enterprise">
-          <h2>Baza AI Tech Programs & Services</h2>
+          <h2>BazaDevSpace Programs & Services</h2>
           <p>
             Whether you are an individual engineer accelerating your career or an enterprise 
-            transforming your engineering organization, Baza AI Tech provides specialized AI training solutions.
+            transforming your engineering organization, BazaDevSpace provides specialized AI training solutions.
           </p>
         </div>
 
@@ -50,11 +50,11 @@ export default function CompanyServices({ onOpenEnroll }) {
             <div className="service-img-wrapper">
               <img
                 src="/baza_ai_enterprise.png"
-                alt="Enterprise AI Workshop by Baza AI Tech"
+                alt="Enterprise AI Workshop by BazaDevSpace"
                 className="service-img"
               />
             </div>
-            <a href="mailto:info@bazaaitech.com?subject=Enterprise%20Training%20Inquiry" className="btn-primary service-btn">
+            <a href="mailto:info@bazadevspace.com?subject=Enterprise%20Training%20Inquiry" className="btn-primary service-btn">
               <span>Request Enterprise Proposal</span>
               <ArrowRight size={16} />
             </a>
@@ -75,7 +75,7 @@ export default function CompanyServices({ onOpenEnroll }) {
               <li><CheckCircle2 size={16} className="text-blue" /> ROI & LLM cost optimization modeling</li>
               <li><CheckCircle2 size={16} className="text-blue" /> Security & data privacy compliance</li>
             </ul>
-            <a href="mailto:info@bazaaitech.com?subject=Executive%20Workshop%20Inquiry" className="btn-secondary service-btn">
+            <a href="mailto:info@bazadevspace.com?subject=Executive%20Workshop%20Inquiry" className="btn-secondary service-btn">
               <span>Book Executive Briefing</span>
               <ArrowRight size={16} />
             </a>
@@ -88,7 +88,7 @@ export default function CompanyServices({ onOpenEnroll }) {
             </div>
             <h3 className="service-title">AI Talent Sourcing & Placement</h3>
             <p className="service-desc">
-              We connect leading technology companies with vetted, top-tier Baza AI Tech graduates 
+              We connect leading technology companies with vetted, top-tier BazaDevSpace graduates 
               who have proven mastery in agent loop engineering.
             </p>
             <ul className="service-list">
@@ -96,7 +96,7 @@ export default function CompanyServices({ onOpenEnroll }) {
               <li><CheckCircle2 size={16} className="text-blue" /> Direct hiring partner introductions</li>
               <li><CheckCircle2 size={16} className="text-blue" /> Contract & full-time placement</li>
             </ul>
-            <a href="mailto:info@bazaaitech.com?subject=Talent%20Hiring%20Inquiry" className="btn-secondary service-btn">
+            <a href="mailto:info@bazadevspace.com?subject=Talent%20Hiring%20Inquiry" className="btn-secondary service-btn">
               <span>Partner as Employer</span>
               <ArrowRight size={16} />
             </a>

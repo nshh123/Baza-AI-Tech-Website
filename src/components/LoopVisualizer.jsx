@@ -79,7 +79,7 @@ export default function LoopVisualizer() {
           <h2>Interactive AI Loop Engineering Simulator</h2>
           <p>
             Experience how autonomous AI agents evaluate, execute, test, and self-correct code in production loops.
-            This is the cutting-edge methodology taught at Baza AI Tech.
+            This is the cutting-edge methodology taught at BazaDevSpace.
           </p>
         </div>
 
@@ -182,7 +182,7 @@ export default function LoopVisualizer() {
                 </div>
                 <div className="terminal-title">
                   <Terminal size={14} />
-                  <span>baza-agent-loop-telemetry.log</span>
+                  <span>bazadevspace-agent-loop-telemetry.log</span>
                 </div>
               </div>
 

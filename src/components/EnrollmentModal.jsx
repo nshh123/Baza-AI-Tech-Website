@@ -37,7 +37,7 @@ export default function EnrollmentModal({ isOpen, onClose, currency, formatPrice
 
     setTimeout(() => {
       setIsSubmitting(false);
-      const generatedId = `BAZA-ENROLL-${Math.floor(100000 + Math.random() * 900000)}`;
+      const generatedId = `BAZADEVSPACE-ENROLL-${Math.floor(100000 + Math.random() * 900000)}`;
       setEnrollmentId(generatedId);
       setEnrollmentComplete(true);
       onEnrollSuccess();
@@ -61,7 +61,7 @@ export default function EnrollmentModal({ isOpen, onClose, currency, formatPrice
         {!enrollmentComplete ? (
           <>
             <div className="modal-header">
-              <h2 className="modal-title">Secure Your Seat at Baza AI Tech</h2>
+              <h2 className="modal-title">Secure Your Seat at BazaDevSpace</h2>
               <p className="modal-subtitle">
                 {seatsLeft} seats remaining for the upcoming Advanced AI Coding & Loop Engineering Bootcamp.
               </p>
@@ -246,7 +246,7 @@ export default function EnrollmentModal({ isOpen, onClose, currency, formatPrice
             <h2 className="success-title">Enrollment Confirmed!</h2>
             <p className="success-subtext">
               Welcome aboard, <strong>{formData.fullName}</strong>! You are officially reserved for the 
-              <strong> August 10th, 2026</strong> Baza AI Tech cohort.
+              <strong> August 10th, 2026</strong> BazaDevSpace cohort.
             </p>
 
             <div className="receipt-card glass-card-solid">

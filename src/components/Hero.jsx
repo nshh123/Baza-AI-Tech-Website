@@ -13,7 +13,7 @@ export default function Hero({ onOpenEnroll, formatPrice, seatsLeft }) {
           </h1>
 
           <p className="hero-subtitle">
-            <strong>Baza AI Tech</strong> provides hands-on, enterprise-grade AI training. 
+            <strong>BazaDevSpace</strong> provides hands-on, enterprise-grade AI training. 
             We teach software developers and organizations how to master prompt engineering, build autonomous 
             agent loops, and deploy production-ready AI applications.
           </p>
@@ -59,7 +59,7 @@ export default function Hero({ onOpenEnroll, formatPrice, seatsLeft }) {
           <div className="image-frame-wrapper">
             <img
               src="/baza_ai_classroom.png"
-              alt="Baza AI Tech Classroom Learning Environment"
+              alt="BazaDevSpace Classroom Learning Environment"
               className="hero-classroom-img"
             />
             

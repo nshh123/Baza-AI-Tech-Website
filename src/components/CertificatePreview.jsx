@@ -11,7 +11,7 @@ export default function CertificatePreview() {
         <div className="section-header">
           <h2>Official Certificate of Completion</h2>
           <p>
-            Earn a verifiable digital credential endorsed by Baza AI Tech, showcasing your mastery of advanced AI coding and loop engineering.
+            Earn a verifiable digital credential endorsed by BazaDevSpace, showcasing your mastery of advanced AI coding and loop engineering.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export default function CertificatePreview() {
             <div className="cert-inner">
               <div className="cert-header">
                 <div className="cert-logo">
-                  <span className="cert-brand">BAZA AI TECH</span>
+                  <span className="cert-brand">BAZADEVSPACE</span>
                   <span className="cert-subbrand">ADVANCED AI ACADEMY</span>
                 </div>
                 <div className="cert-badge-gold">
@@ -79,7 +79,7 @@ export default function CertificatePreview() {
                 <div className="cert-signatory">
                   <div className="signature-line"></div>
                   <span className="signatory-name font-heading">Dr. Eric N.</span>
-                  <span className="signatory-title">Head of AI Curriculum, Baza AI Tech</span>
+                  <span className="signatory-title">Head of AI Curriculum, BazaDevSpace</span>
                 </div>
 
                 <div className="cert-qr-block">
@@ -87,7 +87,7 @@ export default function CertificatePreview() {
                     <QrCode size={36} className="text-cyan" />
                   </div>
                   <div className="qr-info font-code">
-                    <span>ID: BAZA-2026-8942</span>
+                    <span>ID: BAZADEVSPACE-2026-8942</span>
                     <span className="cert-status">
                       <CheckCircle2 size={12} />
                       <span className="cert-status-desktop">CRYPTOGRAPHICALLY VERIFIED</span>

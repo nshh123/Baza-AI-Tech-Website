@@ -7,9 +7,9 @@ export default function CompanyAbout() {
     <section className="company-about-section" id="about">
       <div className="container">
         <div className="section-header">
-          <h2>About Baza AI Tech</h2>
+          <h2>About BazaDevSpace</h2>
           <p>
-            Baza AI Tech was founded with a singular purpose: to bridge the gap between theoretical artificial 
+            BazaDevSpace was founded with a singular purpose: to bridge the gap between theoretical artificial 
             intelligence research and practical, high-value engineering execution.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function CompanyAbout() {
             </div>
             <h3 className="mv-title">Our Vision</h3>
             <p className="mv-text">
-              To establish Baza AI Tech as Africa’s premier center of excellence for Applied Artificial Intelligence. 
+              To establish BazaDevSpace as Africa’s premier center of excellence for Applied Artificial Intelligence. 
               We envision a future where local talent leads the global frontier in autonomous loop engineering, 
               LLM orchestration, and ethical AI innovation.
             </p>
@@ -62,7 +62,7 @@ export default function CompanyAbout() {
                 <h4 className="value-title">Applied Engineering First</h4>
               </div>
               <p className="value-desc">
-                We skip pure academic theory. Every lesson at Baza AI Tech centers around writing real code, 
+                We skip pure academic theory. Every lesson at BazaDevSpace centers around writing real code, 
                 testing live agent loops, and deploying production web services.
               </p>
             </div>
@@ -84,7 +84,7 @@ export default function CompanyAbout() {
                 <h4 className="value-title">Lifetime Alumni Support</h4>
               </div>
               <p className="value-desc">
-                Learning doesn't end at graduation. Baza AI Tech alumni gain lifetime access to updated course modules, 
+                Learning doesn't end at graduation. BazaDevSpace alumni gain lifetime access to updated course modules, 
                 private Discord communities, and career mentorship.
               </p>
             </div>

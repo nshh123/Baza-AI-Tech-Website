@@ -18,7 +18,7 @@ export default function Footer() {
                 <Cpu className="cpu-icon" />
               </div>
               <div className="logo-text">
-                <span className="logo-title">BAZA AI TECH</span>
+                <span className="logo-title">BAZADEVSPACE</span>
                 <span className="logo-subtitle">ADVANCED AI ACADEMY</span>
               </div>
             </a>
@@ -40,7 +40,7 @@ export default function Footer() {
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                   <rect x="2" y="9" width="4" height="12"></rect>
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
@@ -67,14 +67,14 @@ export default function Footer() {
             <div className="contact-list">
               <div className="contact-item">
                 <Globe size={16} className="text-cyan" />
-                <a href="https://www.bazaaitech.com" target="_blank" rel="noreferrer">
-                  www.bazaaitech.com
+                <a href="https://www.bazadevspace.com" target="_blank" rel="noreferrer">
+                  www.bazadevspace.com
                 </a>
               </div>
               <div className="contact-item">
                 <Mail size={16} className="text-cyan" />
-                <a href="mailto:info@bazaaitech.com">
-                  info@bazaaitech.com
+                <a href="mailto:info@bazadevspace.com">
+                  info@bazadevspace.com
                 </a>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 Baza AI Tech. All rights reserved.</p>
+          <p>© 2026 BazaDevSpace. All rights reserved.</p>
           <button className="back-to-top" onClick={scrollToTop}>
             <span>Back to Top</span>
             <ArrowUp size={16} />

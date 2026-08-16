@@ -21,11 +21,11 @@ const FAQS = [
   },
   {
     question: 'Do I get access to code repositories and AI agent templates after graduation?',
-    answer: 'Yes! All graduates receive lifetime access to our Baza AI Tech Agent Template Library, starter codebases, video lecture archives, and private Discord alumni network.'
+    answer: 'Yes! All graduates receive lifetime access to our BazaDevSpace Agent Template Library, starter codebases, video lecture archives, and private Discord alumni network.'
   },
   {
     question: 'How is the Certificate of Completion verified by employers?',
-    answer: 'Each certificate includes a unique cryptographic verification hash and QR code linked to your verified portfolio defense project on the Baza AI Tech credential registry.'
+    answer: 'Each certificate includes a unique cryptographic verification hash and QR code linked to your verified portfolio defense project on the BazaDevSpace credential registry.'
   }
 ];
 
@@ -37,7 +37,7 @@ export default function FAQ() {
       <div className="container">
         <div className="section-header">
           <h2>Frequently Asked Questions</h2>
-          <p>Everything you need to know about enrolling in Baza AI Tech.</p>
+          <p>Everything you need to know about enrolling in BazaDevSpace.</p>
         </div>
 
         <div className="faq-accordion">

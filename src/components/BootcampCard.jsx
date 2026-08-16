@@ -16,7 +16,7 @@ export default function BootcampCard({ onOpenEnroll, formatPrice, seatsLeft }) {
 
         <div className="corp-bootcamp-card corp-card">
           <div className="bootcamp-card-header">
-            <span className="corp-brand-tag font-heading">BAZA AI TECH • OFFICIAL BOOTCAMP</span>
+            <span className="corp-brand-tag font-heading">BAZADEVSPACE • OFFICIAL BOOTCAMP</span>
             <h3 className="corp-bootcamp-title">
               ADVANCED AI CODING & LOOP ENGINEERING BOOTCAMP
             </h3>

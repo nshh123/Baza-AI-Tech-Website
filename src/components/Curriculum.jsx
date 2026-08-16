@@ -73,15 +73,15 @@ const CURRICULUM_MODULES = [
     tagline: 'Module 05: Verification & Career Acceleration',
     icon: Award,
     color: '#F59E0B',
-    summary: 'Validate your skills with an official cryptographic Baza AI Tech Certificate of Completion, backed by project portfolio defense.',
+    summary: 'Validate your skills with an official cryptographic BazaDevSpace Certificate of Completion, backed by project portfolio defense.',
     outcomes: [
       'Verifiable Cryptographic Digital Badge for LinkedIn & Portfolio',
       '1-on-1 Portfolio Defense & Technical Code Review with Instructors',
-      'Exclusive Access to Baza AI Tech Alumni Network & Hiring Partners',
+      'Exclusive Access to BazaDevSpace Alumni Network & Hiring Partners',
       'Career Mentorship: AI Developer resume review and interview coaching'
     ],
     tech: ['Verified Credentials', 'GitHub Showcase', 'LinkedIn Endorsement'],
-    project: 'Defend your Capstone architecture and receive your accredited Baza AI Tech Certification.'
+    project: 'Defend your Capstone architecture and receive your accredited BazaDevSpace Certification.'
   }
 ];
 
@@ -92,7 +92,7 @@ export default function Curriculum() {
     <section className="curriculum-section" id="curriculum">
       <div className="container">
         <div className="section-header">
-          <h2>What You'll Learn at Baza AI Tech</h2>
+          <h2>What You'll Learn at BazaDevSpace</h2>
           <p>
             Our industry-focused curriculum covers everything from foundational prompt engineering 
             to advanced autonomous loop engineering and full-stack deployment.
