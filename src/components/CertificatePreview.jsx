@@ -43,7 +43,7 @@ export default function CertificatePreview() {
 
             {/* Anti-Forgery Specimen Watermark */}
             <div className="cert-watermark" aria-hidden="true">
-              <span>SPECIMEN • PREVIEW ONLY</span>
+              <span>SPECIMEN • NOT REAL</span>
             </div>
 
             <div className="cert-inner">
