@@ -8,21 +8,21 @@ const INSTRUCTORS = [
     role: 'Head of AI Agent Systems',
     bio: 'Ex-Senior ML Engineer with 8+ years developing autonomous agent frameworks and production LLM orchestration pipelines.',
     expertise: ['Loop Engineering', 'ReAct Architectures', 'LangGraph'],
-    img: '/baza_ai_mentor.png'
+    img: '/baza_ai_classroom.png'
   },
   {
     name: 'Dr. Eric N.',
     role: 'Founder & Academic Director',
     bio: 'PhD in Computer Science, passionate about empowering African software developers with frontier AI application skills.',
     expertise: ['Prompt Optimization', 'LLM Fine-Tuning', 'AI Ethics'],
-    img: '/baza_ai_classroom.png'
+    img: '/student_header_curriculum.jpg'
   },
   {
     name: 'David M.',
     role: 'Lead Full-Stack AI Instructor',
     bio: 'Specialist in high-throughput FastAPI streaming services, Vector Databases, and production RAG pipeline deployment.',
     expertise: ['FastAPI & SSE', 'Pinecone & RAG', 'React AI UIs'],
-    img: '/baza_ai_enterprise.png'
+    img: '/student_header_simulator.jpg'
   }
 ];
 
