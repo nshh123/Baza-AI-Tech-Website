@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Award, ShieldCheck, CheckCircle2, QrCode, Sparkles } from 'lucide-react';
+import { CheckCircle2, QrCode, Sparkles } from 'lucide-react';
 import './CertificatePreview.css';
 
 export default function CertificatePreview() {
@@ -48,7 +48,7 @@ export default function CertificatePreview() {
                   <span className="cert-subbrand">ADVANCED AI ACADEMY</span>
                 </div>
                 <div className="cert-badge-gold">
-                  <ShieldCheck size={28} />
+                  <img src="/baza_logo_badge.webp" alt="BazaDevSpace Official Seal" className="cert-logo-img" />
                 </div>
               </div>
 
