@@ -1,8 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ShieldCheck, ArrowRight, Users, Award, Briefcase, Sparkles, Building2 } from 'lucide-react';
 import './Hero.css';
 
+const HERO_SLIDES = [
+  {
+    src: '/baza_ai_classroom.webp',
+    alt: 'BazaDevSpace Classroom Learning Environment'
+  },
+  {
+    src: '/student_header_programs.webp',
+    alt: 'BazaDevSpace Programs & Services'
+  },
+  {
+    src: '/student_header_bootcamp.webp',
+    alt: 'Flagship Bootcamp Offering'
+  },
+  {
+    src: '/student_header_simulator.webp',
+    alt: 'Interactive AI Loop Engineering Simulator'
+  },
+  {
+    src: '/student_header_curriculum.webp',
+    alt: "What You'll Learn at BazaDevSpace"
+  }
+];
+
 export default function Hero({ onOpenEnroll, formatPrice, seatsLeft }) {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="corporate-hero" id="overview">
       <div className="container hero-container-grid">
@@ -54,16 +86,40 @@ export default function Hero({ onOpenEnroll, formatPrice, seatsLeft }) {
           </div>
         </div>
 
-        {/* Right Photo Column showcasing realistic classroom photography */}
+        {/* Right Photo Column showcasing sliding showcase photography */}
         <div className="hero-image-col">
           <div className="image-frame-wrapper">
-            <img
-              src="/baza_ai_classroom.webp"
-              alt="BazaDevSpace Classroom Learning Environment"
-              className="hero-classroom-img"
-              fetchpriority="high"
-              decoding="async"
-            />
+            <div className="hero-slideshow-container">
+              <div 
+                className="hero-slideshow-track" 
+                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              >
+                {HERO_SLIDES.map((slide, idx) => (
+                  <div key={idx} className="hero-slide-item">
+                    <img
+                      src={slide.src}
+                      alt={slide.alt}
+                      className="hero-classroom-img"
+                      loading={idx === 0 ? "eager" : "lazy"}
+                      fetchpriority={idx === 0 ? "high" : "auto"}
+                      decoding="async"
+                    />
+                  </div>
+                ))}
+              </div>
+
+              {/* Slide Indicators */}
+              <div className="hero-slide-dots" aria-label="Slideshow pagination">
+                {HERO_SLIDES.map((_, idx) => (
+                  <button
+                    key={idx}
+                    className={`slide-dot ${idx === currentSlide ? 'active' : ''}`}
+                    onClick={() => setCurrentSlide(idx)}
+                    aria-label={`Go to slide ${idx + 1}`}
+                  />
+                ))}
+              </div>
+            </div>
             
             {/* Overlay Trust Pill */}
             <div className="hero-trust-pill corp-card">
