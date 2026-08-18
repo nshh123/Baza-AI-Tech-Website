@@ -224,7 +224,7 @@ p {
         rgba(15, 23, 42, 0.78),
         rgba(15, 23, 42, 0.88)
       ),
-      url('/student_header_about.jpg');
+      url('/student_header_about.webp');
   }
 
   .section-header h2 {
@@ -251,7 +251,7 @@ p {
         rgba(15, 23, 42, 0.76),
         rgba(15, 23, 42, 0.88)
       ),
-      url('/student_header_programs.jpg');
+      url('/student_header_programs.webp');
   }
 
   /* 2. Flagship Bootcamp Offering Header */
@@ -261,7 +261,7 @@ p {
         rgba(15, 23, 42, 0.76),
         rgba(15, 23, 42, 0.88)
       ),
-      url('/student_header_bootcamp.jpg');
+      url('/student_header_bootcamp.webp');
   }
 
   /* 3. Interactive AI Loop Engineering Simulator Header */
@@ -271,7 +271,7 @@ p {
         rgba(15, 23, 42, 0.76),
         rgba(15, 23, 42, 0.88)
       ),
-      url('/student_header_simulator.jpg');
+      url('/student_header_simulator.webp');
   }
 
   /* 4. About BazaDevSpace Header */
@@ -281,7 +281,7 @@ p {
         rgba(15, 23, 42, 0.76),
         rgba(15, 23, 42, 0.88)
       ),
-      url('/student_header_about.jpg');
+      url('/student_header_about.webp');
   }
 
   /* 5. What You'll Learn / Curriculum Header */
@@ -291,7 +291,7 @@ p {
         rgba(15, 23, 42, 0.76),
         rgba(15, 23, 42, 0.88)
       ),
-      url('/student_header_curriculum.jpg');
+      url('/student_header_curriculum.webp');
   }
 
   /* 6. Experienced AI Practitioners / Instructors Header */
@@ -301,7 +301,7 @@ p {
         rgba(15, 23, 42, 0.76),
         rgba(15, 23, 42, 0.88)
       ),
-      url('/student_header_instructors.jpg');
+      url('/student_header_instructors.webp');
   }
 
   /* 7. Official Certificate of Completion Header */
@@ -311,7 +311,7 @@ p {
         rgba(15, 23, 42, 0.76),
         rgba(15, 23, 42, 0.88)
       ),
-      url('/student_header_certificate.jpg');
+      url('/student_header_certificate.webp');
   }
 
   /* 8. Frequently Asked Questions Header */
@@ -321,7 +321,7 @@ p {
         rgba(15, 23, 42, 0.76),
         rgba(15, 23, 42, 0.88)
       ),
-      url('/student_header_faq.jpg');
+      url('/student_header_faq.webp');
   }
 }
 

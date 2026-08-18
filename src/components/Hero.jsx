@@ -58,9 +58,11 @@ export default function Hero({ onOpenEnroll, formatPrice, seatsLeft }) {
         <div className="hero-image-col">
           <div className="image-frame-wrapper">
             <img
-              src="/baza_ai_classroom.png"
+              src="/baza_ai_classroom.webp"
               alt="BazaDevSpace Classroom Learning Environment"
               className="hero-classroom-img"
+              fetchpriority="high"
+              decoding="async"
             />
             
             {/* Overlay Trust Pill */}

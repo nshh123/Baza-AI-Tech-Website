@@ -49,9 +49,11 @@ export default function CompanyServices({ onOpenEnroll }) {
             </p>
             <div className="service-img-wrapper">
               <img
-                src="/baza_ai_enterprise.png"
+                src="/baza_ai_enterprise.webp"
                 alt="Enterprise AI Workshop by BazaDevSpace"
                 className="service-img"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <a href="mailto:info@bazadevspace.com?subject=Enterprise%20Training%20Inquiry" className="btn-primary service-btn">
