@@ -12,8 +12,8 @@ const HERO_SLIDES = [
     alt: 'BazaDevSpace Programs & Services'
   },
   {
-    src: '/student_header_bootcamp.webp',
-    alt: 'Flagship Bootcamp Offering'
+    src: '/student_header_instructors.webp',
+    alt: 'Learn From Experienced AI Practitioners'
   },
   {
     src: '/student_header_simulator.webp',
@@ -105,18 +105,6 @@ export default function Hero({ onOpenEnroll, formatPrice, seatsLeft }) {
                       decoding="async"
                     />
                   </div>
-                ))}
-              </div>
-
-              {/* Slide Indicators */}
-              <div className="hero-slide-dots" aria-label="Slideshow pagination">
-                {HERO_SLIDES.map((_, idx) => (
-                  <button
-                    key={idx}
-                    className={`slide-dot ${idx === currentSlide ? 'active' : ''}`}
-                    onClick={() => setCurrentSlide(idx)}
-                    aria-label={`Go to slide ${idx + 1}`}
-                  />
                 ))}
               </div>
             </div>
