@@ -1,5 +1,6 @@
 import React from 'react';
 import { Target, Eye, ShieldCheck, HeartHandshake, CheckCircle2, Award, Zap } from 'lucide-react';
+import TypewriterText from './TypewriterText';
 import './CompanyAbout.css';
 
 export default function CompanyAbout() {
@@ -8,10 +9,7 @@ export default function CompanyAbout() {
       <div className="container">
         <div className="section-header">
           <h2>About BazaDevSpace</h2>
-          <p>
-            BazaDevSpace was founded with a singular purpose: to bridge the gap between theoretical artificial 
-            intelligence research and practical, high-value engineering execution.
-          </p>
+          <TypewriterText text="BazaDevSpace was founded with a singular purpose: to bridge the gap between theoretical artificial intelligence research and practical, high-value engineering execution." />
         </div>
 
         <div className="mission-vision-grid" id="mission">

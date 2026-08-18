@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Play, RotateCcw, CheckCircle2, AlertTriangle, Cpu, Terminal, ArrowRight, Layers, Sparkles, RefreshCw } from 'lucide-react';
+import TypewriterText from './TypewriterText';
 import './LoopVisualizer.css';
 
 const PRESET_LOOPS = [
@@ -77,10 +78,7 @@ export default function LoopVisualizer() {
       <div className="container">
         <div className="section-header">
           <h2>Interactive AI Loop Engineering Simulator</h2>
-          <p>
-            Experience how autonomous AI agents evaluate, execute, test, and self-correct code in production loops.
-            This is the cutting-edge methodology taught at BazaDevSpace.
-          </p>
+          <TypewriterText text="Experience how autonomous AI agents evaluate, execute, test, and self-correct code in production loops. This is the cutting-edge methodology taught at BazaDevSpace." />
         </div>
 
         <div className="simulator-grid">

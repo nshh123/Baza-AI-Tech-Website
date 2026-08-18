@@ -1,5 +1,6 @@
 import React from 'react';
 import { UserCheck, Award, Sparkles, BookOpen } from 'lucide-react';
+import TypewriterText from './TypewriterText';
 import './Instructors.css';
 
 const INSTRUCTORS = [
@@ -32,10 +33,7 @@ export default function Instructors() {
       <div className="container">
         <div className="section-header">
           <h2>Learn From Experienced AI Practitioners</h2>
-          <p>
-            Our instructors are active AI engineers and researchers who build production AI systems daily. 
-            Get direct mentorship and code reviews throughout your journey.
-          </p>
+          <TypewriterText text="Our instructors are active AI engineers and researchers who build production AI systems daily. Get direct mentorship and code reviews throughout your journey." />
         </div>
 
         <div className="instructors-grid">

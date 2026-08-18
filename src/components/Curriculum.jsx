@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Sparkles, Code, Cpu, Layers, CheckCircle2, Rocket, Award, Terminal, ArrowRight } from 'lucide-react';
+import TypewriterText from './TypewriterText';
 import './Curriculum.css';
 
 const CURRICULUM_MODULES = [
@@ -93,10 +94,7 @@ export default function Curriculum() {
       <div className="container">
         <div className="section-header">
           <h2>What You'll Learn at BazaDevSpace</h2>
-          <p>
-            Our industry-focused curriculum covers everything from foundational prompt engineering 
-            to advanced autonomous loop engineering and full-stack deployment.
-          </p>
+          <TypewriterText text="Our industry-focused curriculum covers everything from foundational prompt engineering to advanced autonomous loop engineering and full-stack deployment." />
         </div>
 
         <div className="curriculum-layout">

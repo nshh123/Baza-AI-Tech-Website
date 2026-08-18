@@ -1,5 +1,6 @@
 import React from 'react';
 import { GraduationCap, Building2, Users, Briefcase, ArrowRight, CheckCircle2 } from 'lucide-react';
+import TypewriterText from './TypewriterText';
 import './CompanyServices.css';
 
 export default function CompanyServices({ onOpenEnroll }) {
@@ -8,10 +9,7 @@ export default function CompanyServices({ onOpenEnroll }) {
       <div className="container">
         <div className="section-header" id="enterprise">
           <h2>BazaDevSpace Programs & Services</h2>
-          <p>
-            Whether you are an individual engineer accelerating your career or an enterprise 
-            transforming your engineering organization, BazaDevSpace provides specialized AI training solutions.
-          </p>
+          <TypewriterText text="Whether you are an individual engineer accelerating your career or an enterprise transforming your engineering organization, BazaDevSpace provides specialized AI training solutions." />
         </div>
 
         {/* Corporate Services Grid */}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
+import TypewriterText from './TypewriterText';
 import './FAQ.css';
 
 const FAQS = [
@@ -37,7 +38,7 @@ export default function FAQ() {
       <div className="container">
         <div className="section-header">
           <h2>Frequently Asked Questions</h2>
-          <p>Everything you need to know about enrolling in BazaDevSpace.</p>
+          <TypewriterText text="Everything you need to know about enrolling in BazaDevSpace." />
         </div>
 
         <div className="faq-accordion">

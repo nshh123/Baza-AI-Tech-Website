@@ -1,5 +1,6 @@
 import React from 'react';
 import { Calendar, Sparkles, CheckCircle2, ArrowRight, Diamond } from 'lucide-react';
+import TypewriterText from './TypewriterText';
 import './BootcampCard.css';
 
 export default function BootcampCard({ onOpenEnroll, formatPrice, seatsLeft }) {
@@ -8,10 +9,7 @@ export default function BootcampCard({ onOpenEnroll, formatPrice, seatsLeft }) {
       <div className="container">
         <div className="section-header">
           <h2>Flagship Bootcamp Offering</h2>
-          <p>
-            Our flagship cohort program brings together developers for an intensive 6-week hands-on journey 
-            in applied AI coding and autonomous loop engineering.
-          </p>
+          <TypewriterText text="Our flagship cohort program brings together developers for an intensive 6-week hands-on journey in applied AI coding and autonomous loop engineering." />
         </div>
 
         <div className="corp-bootcamp-card corp-card">

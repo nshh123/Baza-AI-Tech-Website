@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CheckCircle2, QrCode, Sparkles } from 'lucide-react';
+import TypewriterText from './TypewriterText';
 import './CertificatePreview.css';
 
 export default function CertificatePreview() {
@@ -10,9 +11,7 @@ export default function CertificatePreview() {
       <div className="container">
         <div className="section-header">
           <h2>Official Certificate of Completion</h2>
-          <p>
-            Earn a verifiable digital credential endorsed by BazaDevSpace, showcasing your mastery of advanced AI coding and loop engineering.
-          </p>
+          <TypewriterText text="Earn a verifiable digital credential endorsed by BazaDevSpace, showcasing your mastery of advanced AI coding and loop engineering." />
         </div>
 
         <div className="certificate-interactive-container">
