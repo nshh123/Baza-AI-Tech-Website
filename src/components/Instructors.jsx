@@ -12,7 +12,7 @@ const INSTRUCTORS = [
   },
   {
     name: 'Dr. Eric N.',
-    role: 'Founder & Academic Director',
+    role: 'Academic Director',
     bio: 'PhD in Computer Science, passionate about empowering African software developers with frontier AI application skills.',
     expertise: ['Prompt Optimization', 'LLM Fine-Tuning', 'AI Ethics'],
     img: '/student_header_curriculum.jpg'
