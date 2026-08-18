@@ -35,11 +35,16 @@ export default function CertificatePreview() {
           </div>
 
           {/* Certificate Render Card */}
-          <div className="certificate-frame glass-card">
+          <div className="certificate-frame glass-card" onContextMenu={(e) => e.preventDefault()}>
             <div className="cert-border-corner top-left"></div>
             <div className="cert-border-corner top-right"></div>
             <div className="cert-border-corner bottom-left"></div>
             <div className="cert-border-corner bottom-right"></div>
+
+            {/* Anti-Forgery Specimen Watermark */}
+            <div className="cert-watermark" aria-hidden="true">
+              <span>SPECIMEN • PREVIEW ONLY</span>
+            </div>
 
             <div className="cert-inner">
               <div className="cert-header">
