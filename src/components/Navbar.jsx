@@ -23,7 +23,7 @@ export default function Navbar({ onOpenEnroll, currency, setCurrency, seatsLeft 
       <div className="container navbar-container">
         <a href="#" className="navbar-logo">
           <div className="logo-badge">
-            <Building2 className="logo-icon" />
+            <img src="/baza_logo_badge.webp" alt="BazaDevSpace Logo" className="logo-img" />
           </div>
           <div className="logo-text">
             <span className="logo-title">BAZADEVSPACE</span>

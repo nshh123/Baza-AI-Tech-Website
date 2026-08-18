@@ -14,8 +14,8 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="footer-brand-col">
             <a href="#" className="navbar-logo">
-              <div className="logo-icon">
-                <Cpu className="cpu-icon" />
+              <div className="logo-badge">
+                <img src="/baza_logo_badge.webp" alt="BazaDevSpace Logo" className="logo-img" />
               </div>
               <div className="logo-text">
                 <span className="logo-title">BAZADEVSPACE</span>
