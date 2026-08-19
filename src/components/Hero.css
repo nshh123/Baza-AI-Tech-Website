@@ -114,42 +114,9 @@
   display: block;
 }
 
+/* Hide slideshow indicator bar on desktop */
 .hero-slide-dots {
-  position: absolute;
-  bottom: 104px;
-  right: 24px;
-  z-index: 15;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(15, 23, 42, 0.7);
-  backdrop-filter: blur(8px);
-  padding: 5px 10px;
-  border-radius: 99px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-}
-
-.slide-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.45);
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  transition: all 0.3s ease;
-}
-
-.slide-dot:hover:not(.active) {
-  background: rgba(255, 255, 255, 0.85);
-}
-
-.slide-dot.active {
-  background: #38bdf8;
-  width: 18px;
-  border-radius: 99px;
-  box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+  display: none;
 }
 
 .hero-trust-pill {
@@ -242,19 +209,41 @@
   }
 
   .hero-slide-dots {
+    display: flex;
+    position: absolute;
     bottom: 12px;
     right: 12px;
-    padding: 4px 8px;
+    z-index: 15;
+    align-items: center;
     gap: 4px;
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(8px);
+    padding: 4px 8px;
+    border-radius: 99px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   }
 
   .slide-dot {
     width: 5px;
     height: 5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.45);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+  }
+
+  .slide-dot:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.85);
   }
 
   .slide-dot.active {
+    background: #38bdf8;
     width: 14px;
+    border-radius: 99px;
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
   }
 
   .hero-trust-pill {
