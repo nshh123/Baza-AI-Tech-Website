@@ -107,6 +107,18 @@ export default function Hero({ onOpenEnroll, formatPrice, seatsLeft }) {
                   </div>
                 ))}
               </div>
+
+              {/* Bottom-Right Slide Indicator Bar */}
+              <div className="hero-slide-dots" aria-label="Slideshow pagination">
+                {HERO_SLIDES.map((_, idx) => (
+                  <button
+                    key={idx}
+                    className={`slide-dot ${idx === currentSlide ? 'active' : ''}`}
+                    onClick={() => setCurrentSlide(idx)}
+                    aria-label={`Go to slide ${idx + 1}`}
+                  />
+                ))}
+              </div>
             </div>
             
             {/* Overlay Trust Pill */}

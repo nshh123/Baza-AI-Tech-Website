@@ -213,3 +213,33 @@
     display: flex !important;
   }
 }
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 9px 0;
+  }
+
+  .navbar-scrolled {
+    padding: 7px 0;
+  }
+
+  .logo-badge {
+    width: 35px;
+    height: 35px;
+    border-radius: 9px;
+  }
+
+  .logo-title {
+    font-size: 0.95rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.56rem;
+    margin-top: 1px;
+  }
+
+  .mobile-hamburger-btn {
+    padding: 6px;
+    border-radius: 7px;
+  }
+}
