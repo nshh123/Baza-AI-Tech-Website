@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './TypewriterText.css';
 
-export default function TypewriterText({ text, speed = 14, className = '' }) {
+export default function TypewriterText({ text, speed = 32, className = '' }) {
   const [displayedText, setDisplayedText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
