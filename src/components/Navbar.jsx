@@ -1,25 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Building2, Sparkles, Menu, X, Globe } from 'lucide-react';
 import './Navbar.css';
 
 export default function Navbar({ onOpenEnroll, currency, setCurrency, seatsLeft }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [navHidden, setNavHidden] = useState(false);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      const currentScrollY = window.scrollY;
+      setScrolled(currentScrollY > 20);
+
+      if (currentScrollY > 60 && currentScrollY > lastScrollY.current && !mobileMenuOpen) {
+        setNavHidden(true);
+      } else if (currentScrollY < lastScrollY.current || currentScrollY <= 20) {
+        setNavHidden(false);
+      }
+
+      lastScrollY.current = currentScrollY;
     };
-    window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [mobileMenuOpen]);
 
   const handleNavClick = () => {
     setMobileMenuOpen(false);
   };
 
   return (
-    <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
+    <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''} ${navHidden ? 'navbar-hidden' : ''}`}>
       <div className="container navbar-container">
         <a href="#" className="navbar-logo">
           <div className="logo-badge">

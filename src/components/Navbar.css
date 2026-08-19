@@ -7,7 +7,8 @@
   padding: 16px 0;
   background: #ffffff;
   border-bottom: 1px solid var(--border-subtle);
-  transition: all var(--transition-normal);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), padding var(--transition-normal), box-shadow var(--transition-normal);
+  will-change: transform;
 }
 
 .navbar-scrolled {
@@ -241,5 +242,10 @@
   .mobile-hamburger-btn {
     padding: 6px;
     border-radius: 7px;
+  }
+
+  .navbar-hidden {
+    transform: translateY(-100%);
+    box-shadow: none;
   }
 }
